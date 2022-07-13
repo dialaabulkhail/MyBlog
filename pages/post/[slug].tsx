@@ -102,7 +102,7 @@ function Post({ post }: Props) {
         <div className="max-w-xl py-10 mx-auto my-10 bg-gray-100">
           <h1 className="text-xl tracking-widest text-center">Comment Sent!</h1>{" "}
           <p className="text-sm tracking-widest text-center">
-            Will be posted once approved..
+            Thank you..
           </p>
         </div>
       ) : (
@@ -237,8 +237,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   },
   'comments': *[
     _type == 'comment' &&
-    post._ref == ^._id &&
-    approved == true
+    post._ref == ^._id
   ],
   description,
   category,
