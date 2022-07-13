@@ -10,7 +10,6 @@ function Header() {
         <div className="items-center hidden space-x-2 text-gray-600 md:inline-flex ">
           <h3 className="px-3 duration-300 ease-in-out rounded-full cursor-pointer hover:bg-gray-200">About</h3>
           <h3 className="px-3 duration-300 ease-in-out rounded-full cursor-pointer hover:bg-gray-200">Contact</h3>
-          <h3 className="px-3 duration-300 ease-in-out rounded-full cursor-pointer hover:bg-gray-200">Follow</h3>
         </div>
       </div>
 
