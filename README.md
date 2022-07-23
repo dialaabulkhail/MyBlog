@@ -1,3 +1,9 @@
+## [sanity backend](https://blogit.sanity.studio/desk)
+## [vercel deployment link](https://blogit-3zounqjxy-dialaabulkhail.vercel.app/)
+
+
+## Setup
+
 ```
 npx craete-next-app --example with-tailwindcss projectname
 ```
