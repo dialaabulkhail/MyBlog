@@ -50,6 +50,14 @@ sanity start
 after creating posts and authors we want to pull them into our project
 
 
+
+## Updates
+To be able to see your updates you should add them to sanity then open your local repo and push it to github to be redeployed (this is aweful)
+
+## How to use
+
+
+
 - in the vision of the sanity add a query of all needed data that you want to fetch 
 
 ```
