@@ -3,12 +3,13 @@ export default function Hero() {
 
   return (
     <div className="flex items-center justify-between px-10 mx-auto space-y-5 bg-black max-w-7xl sm:p-10">
-      <div className="">
+      <div >
         <h1 className="max-w-xl text-5xl text-white">
-          A place to inspire readers and support writers...
+          In hope to help you get started ...
         </h1>
-        <h2 className="pt-5 tracking-widest text-white">
-          Welcome to <span className="font-bold">BLOGIT</span>!
+        <h2 className="max-w-md pt-5 tracking-widest text-white">
+          You'll find blogs of various development subjects written, chosen by me. <br/><br/>
+          <span className="font-bold">Welcome to my blog</span>!
         </h2>
       </div>
 
