@@ -5,25 +5,25 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
-  function sendEmail(e) {
-    e.preventDefault();
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+
     alert("Your message was sent. \n will reply soon!");
 
     emailjs.sendForm(
       "service_19mckop",
       "template_2qf2ml4",
-      e.target,
+       e.currentTarget,
       "AL4X4TAccfBeR34fy"
     );
-  }
+  };
 
   return (
     <>
       <Header />
       <div className="flex items-center justify-between px-10 mx-auto mt-10 bg-black space-y-15 max-w-7xl sm:p-10">
-     
         <div className="w-full col-span-3 mr-2 shadow-xl rounded-xl lg:p-4">
-          <form onSubmit={sendEmail}>
+          <form onSubmit={(e)=>{e.preventDefault();
+            sendEmail}}>
             <div className="grid w-full gap-4 text-white md:grid-cols-2">
               <div className="flex flex-col">
                 <label className="py-2 text-sm uppercase">Name</label>
@@ -32,6 +32,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   required={true}
+                  
                 />
               </div>
 
@@ -82,10 +83,23 @@ const Contact = () => {
           </form>
         </div>
         <div className="text-white">
-          <ul >
-            <li className="py-3 cursor-pointer"><Link href="https://www.linkedin.com/in/dialaabulkhail/"><FaLinkedinIn size={50}/></Link></li>
-            <li className="py-3 cursor-pointer"> <Link href="https://github.com/dialaabulkhail"><FaGithub size={50}/></Link></li>
-            <li className="py-3 cursor-pointer"><Link href="mailto:diala.sh.98@gmail.com"><AiOutlineMail size={50}/></Link></li>
+          <ul>
+            <li className="py-3 cursor-pointer">
+              <Link href="https://www.linkedin.com/in/dialaabulkhail/">
+                <FaLinkedinIn size={50} />
+              </Link>
+            </li>
+            <li className="py-3 cursor-pointer">
+              {" "}
+              <Link href="https://github.com/dialaabulkhail">
+                <FaGithub size={50} />
+              </Link>
+            </li>
+            <li className="py-3 cursor-pointer">
+              <Link href="mailto:diala.sh.98@gmail.com">
+                <AiOutlineMail size={50} />
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
