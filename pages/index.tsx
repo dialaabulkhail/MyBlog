@@ -14,10 +14,9 @@ interface Props {
 export default function Home({ posts }: Props) {
   console.log(posts);
   return (
-    <div className="">
+    <div>
       <Head>
         <title>BLOGIT</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <Hero />
