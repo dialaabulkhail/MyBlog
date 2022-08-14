@@ -6,8 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",
+    "emailjs": "^4.0.1",
+    "framer-motion": "^7.1.0",
     "next": "latest",
     "next-sanity": "^0.6.0",
     "next-video": "0.0.1",
