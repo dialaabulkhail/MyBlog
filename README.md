@@ -1,5 +1,5 @@
 ## [sanity backend](https://blogit.sanity.studio/desk)
-## [vercel deployment link](https://blogit-3zounqjxy-dialaabulkhail.vercel.app/)
+## [vercel deployment link](https://blogit-812np4qpm-dialaabulkhail.vercel.app/#posts)
 
 
 ## Setup
